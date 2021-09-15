@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preload" href="./style/style.css" as="style">
+    <meta charset="UTF-8">
+    <title>List To Do</title>
+    <meta name="description" content="list to do, home work">
+    <!-- <meta name="keywords" content="list, to do"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="./js/app.js" defer></script>
+</head>
+
+<body>
+    <div class="todoList-wrap" id="wrap">
+        <div class="container">
+            <h2 class="createToDoList-title">Add new todo</h2>
+            <form class="createToDoList" id="createToDoList">
+                <input type="text" name="title" placeholder="title">
+                <textarea name="body" placeholder="Body"></textarea>
+                <button type="submit">add task</button>
+            </form>
+        </div>
+
+        <div class="container-wrap" id="wrapTodoList">
+            <div class="container">
+                <h2 class="todos-title">New Tasks</h2>
+                <div class="todo" id="todosNew"></div>
+            </div>
+
+            <div class="container">
+                <h2 class="todos-title">Tasks in progress</h2>
+                <div class="todo" id="todosProgress"></div>
+            </div>
+
+            <div class="container">
+                <h2 class="todos-title">Tasks to delete</h2>
+                <div class="todo" id="todosDelete"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
